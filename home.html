@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--Start topbar-->
+  <div class="container-fluid topbar">
+    <div class="row" style="padding:15px 10px;">
+      <div class="col-md-3" style="position: relative;">
+        <!--Start Settings Box-->
+        <div class="settings-box">
+          <div class="toggle-settings">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="settings-container">
+            <div class="option-header">
+              <h5>Admin<span>LTE</span></h5>
+            </div>
+            <div class="info-box">
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="images/avatar.png" alt="">
+                </div>
+                <div class="col-md-9">
+                  <p>Alexander Pierce</p>
+                  <span>online</span>
+                </div>
+              </div>
+              <form class="form-inline my-2 my-lg-0">
+                <div class="col-lg-8 col-md-6 col-sm-12 p-0">
+                  <input type="text" placeholder="Search..." class="form-control" id="search" name="search">
+                </div>
+                <div class="col-lg-1 col-md-3 col-sm-12 p-0">
+                  <button type="submit" class="btn btn-base" style="color: #999999;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-search">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="list-box">
+              <h4>Main Navigation</h4>
+              <div class="background">
+                <span class="yes active" data-background="yes" style="color: #222D32;">Yes</span>
+                <span class="no" data-background="no" style="color: #222D32;">No</span>
+                <ul class="list-unstyled">
+                  <li>
+                    <ul>
+                      <div class="row">
+                        <div class="col-md-9">
+                          <i class="fas fa-tachometer-alt"></i>
+                          <span>Dashboard</span>
+                        </div>
+                        <div class="col-md-3">
+                          <i class="fas fa-angle-left"></i>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <div class="row">
+                        <div class="col-md-9">
+                          <i class="fas fa-file-prescription"></i>
+                          <span>Layout Options</span>
+                        </div>
+                        <div class="col-md-3">
+                          <span
+                            style="color: #fff; font-size: 11px; background-color: #3C8DBC; padding: 2px 5px; border-radius: 3px;">4</span>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <div class="row">
+                        <div class="col-md-8">
+                          <i class="fas fa-th"></i>
+                          <span>Widgets</span>
+                        </div>
+                        <div class="col-md-4">
+                          <span
+                            style="color: #fff; font-size: 11px; background-color: #00A65A; padding: 2px 5px; border-radius: 3px; margin-left: 10px;">
+                            new</span>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <div class="row">
+                        <div class="col-md-9">
+                          <i class="fas fa-chart-pie"></i>
+                          <span>Charts</span>
+                        </div>
+                        <div class="col-md-3">
+                          <i class="fas fa-angle-left"></i>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <div class="row">
+                        <div class="col-md-9">
+                          <i class="fas fa-laptop"></i>
+                          <span>UI Elements</span>
+                        </div>
+                        <div class="col-md-3">
+                          <i class="fas fa-angle-left"></i>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <div class="row">
+                        <div class="col-md-9">
+                          <i class="fab fa-wpforms"></i>
+                          <span>Forms</span>
+                        </div>
+                        <div class="col-md-3">
+                          <i class="fas fa-angle-left"></i>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <div class="row">
+                        <div class="col-md-9">
+                          <i class="fas fa-table"></i>
+                          <span>Tables</span>
+                        </div>
+                        <div class="col-md-3">
+                          <i class="fas fa-angle-left"></i>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <div class="row">
+                        <div class="col-md-8">
+                          <i class="far fa-calendar-alt"></i>
+                          <span>Calender</span>
+                        </div>
+                        <div class="col-md-4">
+                          <span
+                            style="color: #fff; font-size: 11px; background-color: #0073B7; padding: 2px 5px; border-radius: 3px;">17</span>
+                          <span
+                            style="color: #fff; font-size: 11px; background-color: #DD4B39; padding: 2px 5px; border-radius: 3px;">3</span>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <div class="row">
+                        <div class="col-md-7">
+                          <i class="fas fa-envelope"></i>
+                          <span>Mailbox</span>
+                        </div>
+                        <div class="col-md-5">
+                          <span
+                            style="color: #fff; font-size: 11px; background-color: #DD4B39; padding: 2px 5px; border-radius: 3px;">5</span>
+                          <span
+                            style="color: #fff; font-size: 11px; background-color: #00A65A; padding: 2px 5px; border-radius: 3px;">16</span>
+                          <span
+                            style="color: #fff; font-size: 11px; background-color: #F39C12; padding: 2px 5px; border-radius: 3px;">12</span>
+                        </div>
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Settings Box-->
+
+      </div>
+      <div class="col-md-9">
+        <div class="topbar__flexend d-flex justify-content-end align-items-center">
+          <div class="topbar__icons">
+            <ul>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>8</span>
+              </li>
+              <li>
+                <i class="fas fa-bell"></i>
+                <span>5</span>
+              </li>
+              <li>
+                <i class="fas fa-flag"></i>
+                <span>4</span>
+              </li>
+            </ul>
+          </div>
+          <div class="topbar__info">
+            <img src="images/avatar.png" alt="" style="width: 30px; height: 30px; border-radius: 50%;">
+            <span>Alexander Pierce</span>
+          </div>
+          <i class="topbar__gears fas fa-cogs"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End topbar-->
+  <!--Start Bread Crumps-->
+  <div class="bread__crumps">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="dashboard-box">
+            <span>Dashboard</span>
+            <span>Version 2.0</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bread__crumps-box">
+            <ol class="breadcrumb justify-content-end" style="background: none;">
+              <li><i class="fas fa-igloo"></i></li>
+              <li class="breadcrumb-item">Home</li>
+              <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="info-box">
+            <div class="info-icon">
+              <i class="fas fa-cog"></i>
+            </div>
+            <div class="info-details">
+              <span>CPU TRAFFIC</span>
+              <p>90<span>%</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="info-box">
+            <div class="info-icon">
+              <i class="fab fa-google-plus-g"></i>
+            </div>
+            <div class="info-details">
+              <span>CPU TRAFFIC</span>
+              <p>90<span>%</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="info-box">
+            <div class="info-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="info-details">
+              <span>CPU TRAFFIC</span>
+              <p>90<span>%</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="info-box">
+            <div class="info-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="info-details">
+              <span>CPU TRAFFIC</span>
+              <p>90<span>%</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Bread Cramps-->
+  <!--Start Monthly Report-->
+  <div class="monthly-report">
+    <div class="container-fluid">
+      <div class="monthly-report-header">
+        <div class="row">
+          <div class="col-md-9">
+            <h3>Monthly Recap Report</h3>
+          </div>
+          <div class="col-md-3">
+            <div class="monthly-report-header-icons">
+              <ul class="justify-content-end">
+                <li><i class="far fa-window-minimize"></i></li>
+                <li><i class="fas fa-wrench"></i></li>
+                <li><i class="fas fa-times"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="monthly-report-content">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="monthly-report-chart">
+              <canvas id="line-chart" width="800px" height="450px"></canvas>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="goal-completion">
+              <p class="text-center" style="margin-bottom: 10px;"><strong>Goal Completion</strong></p>
+              <div class="progress-group">
+                <span class="progress-text">Add Products to Cart</span>
+                <span class="progress-number" style="float: right;"><b>160</b>/200</span>
+                <div class="progress sm">
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+              <div class="progress-group">
+                <span class="progress-text">Complete Purchase</span>
+                <span class="progress-number" style="float: right;"><b>310</b>/400</span>
+                <div class="progress sm">
+                  <div class="progress-bar bg-danger" style="width: 80%;"></div>
+                </div>
+              </div>
+              <div class="progress-group">
+                <span class="progress-text">Visit Premium Page</span>
+                <span class="progress-number" style="float: right;"><b>480</b>/800</span>
+                <div class="progress sm">
+                  <div class="progress-bar bg-success" style="width: 80%;"></div>
+                </div>
+              </div>
+              <div class="progress-group">
+                <span class="progress-text">Send Inquiries</span>
+                <span class="progress-number" style="float: right;"><b>250</b>/500</span>
+                <div class="progress sm">
+                  <div class="progress-bar bg-warning" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="monthly-report-footer">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="description-block border-right">
+              <span class="description-percentage" style="color: #00a65a;"><i class="fa fa-caret-up"></i> 17%</span>
+              <h5 class="description-header">$35,210.43</h5>
+              <span class="description-text">TOTAL REVENUE</span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="description-block border-right">
+              <span class="description-percentage" style="color: #f39c12;"><i class="fa fa-caret-left"></i> 0%</span>
+              <h5 class="description-header">$35,210.43</h5>
+              <span class="description-text">TOTAL PROFIT</span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="description-block border-right">
+              <span class="description-percentage" style="color: #00a65a;"><i class="fa fa-caret-up"></i> 20%</span>
+              <h5 class="description-header">$35,210.43</h5>
+              <span class="description-text">TOTAL COST</span>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="description-block border-right">
+              <span class="description-percentage" style="color: #dd4b39;"><i class="fa fa-caret-down"></i> 18%</span>
+              <h5 class="description-header">$35,210.43</h5>
+              <span class="description-text">GOAL COMPLETIONS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Monthly Report-->
+  <!--Start Visitors Report-->
+  <div class="visitors-report">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="box-content">
+            <div class="box-header">
+              <h4 class="box-title" style="font-weight: 400;">Visitors Reports</h4>
+              <div class="box-tools">
+                <i class="far fa-window-minimize" aria-hidden="true"></i>
+                <i class="fas fa-times" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="box-body">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="map">
+                    <div id="map-container-google-2" class="z-depth-1-half map-container">
+                      <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" style="border:0; width: 100%; margin-top: -10px;" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="pad box-pane bg-success" style="min-height: 280px">
+                    <div class="description-block">
+                      <div class="sparkbar pad" data-color="#fff">
+                        <img src="images/chart1.jpg" alt="" style="width: 55px; height: 55px; padding-top: 5px;">
+                      </div>
+                      <h5 class="description-header">8390</h5>
+                      <span class="description-text">Visits</span>
+                    </div>
+                    <div class="description-block">
+                      <div class="sparkbar pad" data-color="#fff">
+                        <img src="images/chart1.jpg" alt="" style="width: 55px; height: 55px; padding-top: 5px;">
+                      </div>
+                      <h5 class="description-header">30%</h5>
+                      <span class="description-text">Referrals</span>
+                    </div>
+                    <div class="description-block" style="padding-bottom: 15px;">
+                      <div class="sparkbar pad" data-color="#fff">
+                        <img src="images/chart1.jpg" alt="" style="width: 55px; height: 55px; padding-top: 5px;">
+                      </div>
+                      <h5 class="description-header">70%</h5>
+                      <span class="description-text">Organic</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info-box bg-warning">
+            <span class="info-box-icon"><i class="fas fa-tag"></i></span>
+            <div class="info-box-content" style="height: 90px; color: #fff;">
+              <span class="info-box-text" style="padding-left: 20px;">Inventory</span>
+              <span class="info-box-number" style="padding-left: 110px;">5,200</span>
+              <div class="progress" style="border-radius: 0; height: 2px; background-color: #C27D0E;">
+                <div class="progress-bar" style="width: 50%; background-color: #fff;"></div>
+              </div>
+              <span class="progress-description" style="padding-left: 20px;">
+                50% Increase in 30 Days
+              </span>
+            </div>
+          </div>
+          <div class="info-box bg-success">
+            <span class="info-box-icon"><i class="far fa-heart"></i></i></span>
+            <div class="info-box-content" style="height: 90px; color: #fff;">
+              <span class="info-box-text" style="padding-left: 20px;">Inventory</span>
+              <span class="info-box-number" style="padding-left: 110px;">5,200</span>
+              <div class="progress" style="border-radius: 0; height: 2px; background-color: #008548;">
+                <div class="progress-bar" style="width: 50%; background-color: #fff;"></div>
+              </div>
+              <span class="progress-description" style="padding-left: 20px;">
+                50% Increase in 30 Days
+              </span>
+            </div>
+          </div>
+          <div class="info-box bg-danger">
+            <span class="info-box-icon"><i class="fas fa-cloud-download-alt"></i></span>
+            <div class="info-box-content" style="height: 90px; color: #fff;">
+              <span class="info-box-text" style="padding-left: 20px;">Inventory</span>
+              <span class="info-box-number" style="padding-left: 110px;">5,200</span>
+              <div class="progress" style="border-radius: 0; height: 2px; background-color: #b13c2e;">
+                <div class="progress-bar" style="width: 50%; background-color: #fff;"></div>
+              </div>
+              <span class="progress-description" style="padding-left: 20px;">
+                50% Increase in 30 Days
+              </span>
+            </div>
+          </div>
+          <div class="info-box bg-primary">
+            <span class="info-box-icon"><i class="fas fa-cloud"></i></span>
+            <div class="info-box-content" style="height: 90px; color: #fff;">
+              <span class="info-box-text" style="padding-left: 20px;">Inventory</span>
+              <span class="info-box-number" style="padding-left: 110px;">5,200</span>
+              <div class="progress" style="border-radius: 0; height: 2px; background-color: #009abf;">
+                <div class="progress-bar" style="width: 50%; background-color: #fff;"></div>
+              </div>
+              <span class="progress-description" style="padding-left: 20px;">
+                50% Increase in 30 Days
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Visitors Report-->
+  <!--Start Last Section-->
+  <div class="last-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <!--Start Chat & Members-->
+            <div class="col-md-6">
+              <div class="direct-chat">
+                <div class="direct-chat-header">
+                  <h4 class="direct-chat-title" style="font-weight: 400; font-size: 18px;">Direct Chat</h4>
+                  <div class="direct-chat-tools">
+                    <span>3</span>
+                    <i class="far fa-window-minimize" aria-hidden="true"></i>
+                    <i class="far fa-comments"></i>
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="direct-chat-body">
+                  <div class="left">
+                    <div class="name-date">
+                      <span style="font-weight: bold;">Alexander Pierce</span>
+                      <span style="color: #999;">23 Jan 2:00pm</span>
+                    </div>
+                    <div class="img-text">
+                      <img src="images/avatar.png" alt="">
+                      <p>Is this template really for free? That's unbelievable!</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="name-date">
+                      <span style="color: #999;">23 Jan 2:05pm</span>
+                      <span style="font-weight: bold;">Sarah Bullock</span>
+                    </div>
+                    <div class="img-text">
+                      <p>You better believe it!</p>
+                      <img src="images/avatar2.png" alt="">
+                    </div>
+                  </div>
+                  <div class="left">
+                    <div class="name-date">
+                      <span style="font-weight: bold;">Alexander Pierce</span>
+                      <span style="color: #999;">23 Jan 2:00pm</span>
+                    </div>
+                    <div class="img-text">
+                      <img src="images/avatar.png" alt="">
+                      <p>Is this template really for free? That's unbelievable!</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="name-date">
+                      <span style="color: #999;">23 Jan 2:05pm</span>
+                      <span style="font-weight: bold;">Sarah Bullock</span>
+                    </div>
+                    <div class="img-text">
+                      <p>You better believe it!</p>
+                      <img src="images/avatar2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="direct-chat-msg">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" style="font-size: 14px; border-radius: 0;"
+                      placeholder="Type a Message ..." aria-label="Recipient's username"
+                      aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary send-button" style="border-radius: 0;"
+                        type="button">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End Chat & Members-->
+            <!--Start Latest Members-->
+            <div class="col-md-6">
+              <div class="latest-members">
+                <div class="latest-members-header">
+                  <h4 class="latest-members-title" style="font-weight: 400; font-size: 18px;">Latest Members</h4>
+                  <div class="latest-members-tools">
+                    <span>8 New Members</span>
+                    <i class="far fa-window-minimize" aria-hidden="true"></i>
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="latest-members-body">
+                  <ul class="users-list">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <li>
+                          <img src="images/latest-imgs1.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">Alexander ...</a>
+                          <span class="users-list-date">Today</span>
+                        </li>
+                      </div>
+                      <div class="col-md-3">
+                        <li>
+                          <img src="images/latest-imgs2.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">Norman</a>
+                          <span class="users-list-date">Today</span>
+                        </li>
+                      </div>
+                      <div class="col-md-3">
+                        <li>
+                          <img src="images/latest-imgs3.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">Jane</a>
+                          <span class="users-list-date">Today</span>
+                        </li>
+                      </div>
+                      <div class="col-md-3">
+                        <li>
+                          <img src="images/latest-imgs4.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">John</a>
+                          <span class="users-list-date">Today</span>
+                        </li>
+                      </div>
+                      <div class="col-md-3">
+                        <li>
+                          <img src="images/latest-imgs1.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">Alexander ...</a>
+                          <span class="users-list-date">Today</span>
+                        </li>
+                      </div>
+                      <div class="col-md-3">
+                        <li>
+                          <img src="images/latest-imgs2.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">Norman</a>
+                          <span class="users-list-date">Today</span>
+                        </li>
+                      </div>
+                      <div class="col-md-3">
+                        <li>
+                          <img src="images/latest-imgs3.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">Jane</a>
+                          <span class="users-list-date">Today</span>
+                        </li>
+                      </div>
+                      <div class="col-md-3">
+                        <li>
+                          <img src="images/latest-imgs4.jpg" alt="User Image">
+                          <a class="users-list-name" href="#">John</a>
+                          <span class="users-list-date">Today</span>
+                        </li>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+                <div class="latest-member-footer">
+                  <a href="#">View All Users</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End Latest Members-->
+          <!--Start Latest Orders-->
+          <div class="latest-orders">
+            <div class="latest-orders-header">
+              <h4 class="latest-orders-title" style="font-weight: 400; font-size: 18px;">Latest Members</h4>
+              <div class="latest-orders-tools">
+                <i class="far fa-window-minimize" aria-hidden="true"></i>
+                <i class="fas fa-times" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="latest-orders-body">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th style="border: 0;">Order ID</th>
+                      <th style="border: 0;">Item</th>
+                      <th style="border: 0;">Status</th>
+                      <th style="border: 0;">Popularity</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="pages/examples/invoice.html"
+                          style="color: #3c8dbc; text-decoration: none;">OR9842</a></td>
+                      <td>Call of Duty IV</td>
+                      <td><span class="label btn-success">Shipped</span></td>
+                      <td>
+                        <div class="sparkbar" data-color="#00a65a" data-height="20">
+                          <img src="images/chart1.jpg" style="width: 25px; height: 25px;" alt="">
+                          <canvas width="34" height="20"
+                            style="display: inline-block; width: 34px; height: 20px; vertical-align: top;">
+                          </canvas>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="pages/examples/invoice.html"
+                          style="color: #3c8dbc; text-decoration: none;">OR1848</a></td>
+                      <td>Samsung Smart TV</td>
+                      <td><span class="label btn-warning">Pending</span></td>
+                      <td>
+                        <div class="sparkbar" data-color="#f39c12" data-height="20">
+                          <img src="images/chart1.jpg" style="width: 25px; height: 25px;" alt="">
+                          <canvas width="34" height="20"
+                            style="display: inline-block; width: 34px; height: 20px; vertical-align: top;">
+                          </canvas>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="pages/examples/invoice.html"
+                          style="color: #3c8dbc; text-decoration: none;">OR7429</a></td>
+                      <td>iPhone 6 Plus</td>
+                      <td><span class="label btn-danger">Delivered</span></td>
+                      <td>
+                        <div class="sparkbar" data-color="#f56954" data-height="20">
+                          <img src="images/chart1.jpg" style="width: 25px; height: 25px;" alt="">
+                          <canvas width="34" height="20"
+                            style="display: inline-block; width: 34px; height: 20px; vertical-align: top;">
+                          </canvas>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="pages/examples/invoice.html"
+                          style="color: #3c8dbc; text-decoration: none;">OR7429</a></td>
+                      <td>Samsung Smart TV</td>
+                      <td><span class="label btn-info">Processing</span></td>
+                      <td>
+                        <div class="sparkbar" data-color="#00c0ef" data-height="20">
+                          <img src="images/chart1.jpg" style="width: 25px; height: 25px;" alt="">
+                          <canvas width="34" height="20"
+                            style="display: inline-block; width: 34px; height: 20px; vertical-align: top;">
+                          </canvas>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="pages/examples/invoice.html"
+                          style="color: #3c8dbc; text-decoration: none;">OR1848</a></td>
+                      <td>Samsung Smart TV</td>
+                      <td><span class="label btn-warning">Pending</span></td>
+                      <td>
+                        <div class="sparkbar" data-color="#f39c12" data-height="20">
+                          <img src="images/chart1.jpg" style="width: 25px; height: 25px;" alt="">
+                          <canvas width="34" height="20"
+                            style="display: inline-block; width: 34px; height: 20px; vertical-align: top;">
+                          </canvas>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="pages/examples/invoice.html"
+                          style="color: #3c8dbc; text-decoration: none;">OR7429</a></td>
+                      <td>iPhone 6 Plus</td>
+                      <td><span class="label btn-danger">Delivered</span></td>
+                      <td>
+                        <div class="sparkbar" data-color="#f56954" data-height="20">
+                          <img src="images/chart1.jpg" style="width: 25px; height: 25px;" alt="">
+                          <canvas width="34" height="20"
+                            style="display: inline-block; width: 34px; height: 20px; vertical-align: top;">
+                          </canvas>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="pages/examples/invoice.html"
+                          style="color: #3c8dbc; text-decoration: none;">OR9842</a></td>
+                      <td>Call of Duty IV</td>
+                      <td><span class="label btn-success">Shipped</span></td>
+                      <td>
+                        <div class="sparkbar" data-color="#00a65a" data-height="20">
+                          <img src="images/chart1.jpg" style="width: 25px; height: 25px;" alt="">
+                          <canvas width="34" height="20"
+                            style="display: inline-block; width: 34px; height: 20px; vertical-align: top;">
+                          </canvas>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <div class="latest-orders-footer">
+              <button type="button">Place New Order</button>
+              <button type="button">View All Orders</button>
+            </div>
+          </div>
+          <!--End Latest Orders-->
+        </div>
+        <!--Start Browser Usage-->
+        <div class="col-md-4">
+          <div class="browser-usage">
+            <div class="browser-usage-header">
+              <h4 class="browser-usage-title" style="font-weight: 400; font-size: 18px;">Browser Usage</h4>
+              <div class="browser-usage-tools">
+                <i class="far fa-window-minimize" aria-hidden="true"></i>
+                <i class="fas fa-times" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="browser-usage-body">
+              <canvas id="doughnut-chart" width="800" height="450"></canvas>
+            </div>
+            <div class="browser-usage-footer">
+              <ul class="nav">
+                <li>
+                  <a href="#" class="pull-left">United States of America</a>
+                  <span class="pull-right" style="color: #dd4b39 ;"><i class="fa fa-angle-down"></i> 12%</span>
+                </li>
+                <li>
+                  <a href="#" class="pull-left">India</a>
+                  <span class="pull-right" style="color: #00a65a ;"><i class="fa fa-angle-up"></i> 4%</span>
+                </li>
+                <li>
+                  <a href="#" class="pull-left">China</a>
+                  <span class="pull-right" style="color: #f39c12 ;"><i class="fa fa-angle-left"></i> 0%</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--End Browser Usage-->
+          <!--Start Recently Products-->
+          <div class="recently-products">
+            <div class="recently-products-header">
+              <h4 class="recently-products-title" style="font-weight: 400; font-size: 18px;">Recently Added Products
+              </h4>
+              <div class="recently-products-tools">
+                <i class="far fa-window-minimize" aria-hidden="true"></i>
+                <i class="fas fa-times" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="recently-products-body">
+              <ul class="products-list">
+                <li class="item">
+                  <div class="product-img">
+                    <img src="https://via.placeholder.com/50" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript:void(0)" class="product-title">Samsung TV
+                      <span class="label btn-warning">$1800</span></a>
+                    <span class="product-description">
+                      Samsung 32" 1080p 60Hz LED Smart HDTV.
+                    </span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="product-img">
+                    <img src="https://via.placeholder.com/50" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript:void(0)" class="product-title">Bicycle
+                      <span class="label btn-info" style="left: 87%;">$700</span></a>
+                    <span class="product-description">
+                      26" Mongoose Dolomite Men's 7-speed, Navy Blue.
+                    </span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="product-img">
+                    <img src="https://via.placeholder.com/50" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript:void(0)" class="product-title">Xbox One
+                      <span class="label btn-danger" style="left: 75%;">$350</span></a>
+                    <span class="product-description">
+                      Xbox One Console Bundle with Halo Master Chief Collection.
+                    </span>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="product-img">
+                    <img src="https://via.placeholder.com/50" alt="Product Image">
+                  </div>
+                  <div class="product-info">
+                    <a href="javascript:void(0)" class="product-title">PlayStation 4
+                      <span class="label btn-success" style="left: 133%;">$399</span></a>
+                    <span class="product-description">
+                      PlayStation 4 500GB Console (PS4)
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="recently-products-footer">
+              <a href="#">View All Products</a>
+            </div>
+          </div>
+          <!--End Recently Products-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Last Section-->
+  <!--Start Footer-->
+  <div class="footer">
+    <p><span>Copyright © 2014-2019 <a href="#">AdminLTE</a>.</span> All rights reserved.</p>
+    <p><span>Version</span> 2.4.13</p>
+  </div>
+  <!--End Footer-->
+  <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-sparkline.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
